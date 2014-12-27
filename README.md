@@ -5,7 +5,7 @@ These formulae are only available as pre-release versions and have no stable tar
 There's a few problems with devel-only software:
 
 * Upstream doesn't consider it stable yet so we shouldn't be recommending it to users.
-* Things are more likely to dramtically change or break and that adds to our support burden.
+* Things are more likely to dramatically change or break and that adds to our support burden.
 
 ## What can I do to get this back in Homebrew core?
 Contact the software's developer and ask them to tag a stable release. If the software has a stable release and works reliably, feel free to submit a pull request at the main Homebrew repository.
