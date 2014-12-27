@@ -1,4 +1,4 @@
-# Homebrew Devel
+# Homebrew Devel-Only
 These formulae are only available as pre-release versions and have no stable tarballs.
 
 ## Why is "devel-only" bad?
@@ -11,14 +11,14 @@ There's a few problems with devel-only software:
 Contact the software's developer and ask them to tag a stable release. If the software has a stable release and works reliably, feel free to submit a pull request at the main Homebrew repository.
 
 ## How do I install these formulae?
-`brew install homebrew/devel/<formula>`
+`brew install homebrew/devel-only/<formula>`
 
-Or `brew tap homebrew/devel` and then `brew install <formula>`.
+Or `brew tap homebrew/devel-only` and then `brew install <formula>`.
 
 Or install via URL (which will not receive updates):
 
 ```
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-devel/master/<formula>.rb
+brew install https://raw.githubusercontent.com/Homebrew/homebrew-devel-only/master/<formula>.rb
 ```
 
 ## Documentation
