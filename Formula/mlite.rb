@@ -1,9 +1,7 @@
-require "formula"
-
 class Mlite < Formula
   homepage "http://t3x.org/mlite/index.html"
-  url "http://t3x.org/mlite/mlite-20141203.tgz"
-  sha1 "a5320eb052091fc6491fc5c7362a3ff4cad3b390"
+  url "http://t3x.org/mlite/mlite-20141229.tgz"
+  sha1 "2c150bbbff33fa6bbd9aac7de00a374c129105f5"
 
   def install
     system "make", "CC=#{ENV.cc}"
