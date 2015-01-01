@@ -1,5 +1,3 @@
-require "formula"
-
 class J2objc < Formula
   homepage "http://j2objc.org/"
   url "https://github.com/google/j2objc/releases/download/0.9.5/j2objc-0.9.5.zip"
