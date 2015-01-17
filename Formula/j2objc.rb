@@ -1,7 +1,10 @@
 class J2objc < Formula
   homepage "http://j2objc.org/"
-  url "https://github.com/google/j2objc/releases/download/0.9.5/j2objc-0.9.5.zip"
-  sha1 "6b53c2b47c9cd4c6678d0fee75b00039b83fc120"
+
+  devel do
+    url "https://github.com/google/j2objc/releases/download/0.9.5/j2objc-0.9.5.zip"
+    sha1 "6b53c2b47c9cd4c6678d0fee75b00039b83fc120"
+  end
 
   depends_on :xcode
   depends_on :macos => :mavericks
