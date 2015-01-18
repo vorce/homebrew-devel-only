@@ -1,7 +1,10 @@
 class Shadowvpn < Formula
   homepage "https://shadowvpn.org/"
-  url "https://github.com/clowwindy/ShadowVPN/releases/download/0.1.5/shadowvpn-0.1.5.tar.gz"
-  sha256 "dcfabac906730fcc1439a14eab1d4bcf553450981df695b6974c83b13e5f5987"
+
+  devel do
+    url "https://github.com/clowwindy/ShadowVPN/releases/download/0.1.5/shadowvpn-0.1.5.tar.gz"
+    sha256 "dcfabac906730fcc1439a14eab1d4bcf553450981df695b6974c83b13e5f5987"
+  end
 
   depends_on :tuntap
 
