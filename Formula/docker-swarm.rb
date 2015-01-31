@@ -6,7 +6,7 @@ class DockerSwarm < Formula
   devel do
     url "https://github.com/docker/swarm/archive/v0.1.0-rc2.tar.gz"
     sha1 "05b8b5a7818d931bfa917839518cde78f3a507ed"
-    version "0.1.0-rc2"
+    version "0.1.0_rc2"
   end
 
   head "https://github.com/docker/swarm.git"
