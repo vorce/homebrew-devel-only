@@ -4,9 +4,9 @@ class DockerMachine < Formula
   homepage "https://github.com/docker/machine"
 
   devel do
-    url "https://github.com/docker/machine/archive/v0.1.0-rc2.tar.gz"
-    version "0.1.0_rc2"
-    sha1 "5251d959f6ff1ee6a7e7fb0d7b23aeb6152d7d3c"
+    url "https://github.com/docker/machine/archive/v0.1.0.tar.gz"
+    version "0.1.0"
+    sha1 "fa151f80e126a43cb9b466b21c83d2a2002b1ea0"
   end
 
   head "https://github.com/docker/machine.git"
