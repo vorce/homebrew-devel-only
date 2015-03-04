@@ -4,9 +4,8 @@ class DockerSwarm < Formula
   homepage "https://github.com/docker/swarm"
 
   devel do
-    url "https://github.com/docker/swarm/archive/v0.1.0-rc2.tar.gz"
-    sha1 "05b8b5a7818d931bfa917839518cde78f3a507ed"
-    version "0.1.0_rc2"
+    url "https://github.com/docker/swarm/archive/v0.1.0.tar.gz"
+    sha1 "c50d1571d3c58fe83149baffa1e29484f960e69a"
   end
 
   head "https://github.com/docker/swarm.git"
@@ -18,9 +17,9 @@ class DockerSwarm < Formula
       :revision => "89efc1fea9b8b47f6f6ce72279a7ed9496b4cdb3"
   end
 
-  go_resource "github.com/armon/consul-api" do
-    url "https://github.com/armon/consul-api.git",
-      :revision => "dcfedd50ed5334f96adee43fc88518a4f095e15c"
+  go_resource "github.com/hashicorp/consul" do
+    url "https://github.com/hashicorp/consul.git",
+      :revision => "0c7ca91c74587d0a378831f63e189ac6bf7bab3f"
   end
 
   go_resource "github.com/codegangsta/cli" do
@@ -81,6 +80,6 @@ class DockerSwarm < Formula
 
   test do
     output = shell_output("#{bin}/docker-swarm -v")
-    assert_equal output, "swarm version 0.0.1\n"
+    assert_equal output, "docker-swarm version 0.1.0 (HEAD)\n"
   end
 end
