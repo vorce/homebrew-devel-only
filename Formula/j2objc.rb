@@ -2,8 +2,8 @@ class J2objc < Formula
   homepage "http://j2objc.org/"
 
   devel do
-    url "https://github.com/google/j2objc/releases/download/0.9.6.1/j2objc-0.9.6.1.zip"
-    sha1 "e4688c50adc169599b01789b3e6ee9d8c750092a"
+    url "https://github.com/google/j2objc/releases/download/0.9.7/j2objc-0.9.7.zip"
+    sha256 "47496a5d9039d7438f4e80facedd270ab748620603c1d5138ccd1c011a26501e"
   end
 
   depends_on :xcode
@@ -13,14 +13,13 @@ class J2objc < Formula
   def install
     # Building from source is a nightmare right now, so use the shipped binaries.
     # It doesn't ship with a bin folder, so script things instead to avoid tantrum.
-    prefix.install_metafiles
     libexec.install Dir["*"]
 
     bin.write_exec_script libexec/"cycle_finder"
     bin.write_exec_script libexec/"j2objc"
     bin.write_exec_script libexec/"j2objcc"
-    man1.install_symlink libexec/"man/man1/j2objc.1"
-    man1.install_symlink libexec/"man/man1/j2objcc.1"
+    bin.write_exec_script libexec/"j2objc_protoc"
+    man1.install_symlink Dir["#{libexec}/man/man1/*.1"]
   end
 
   test do
