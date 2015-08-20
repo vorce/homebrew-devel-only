@@ -18,7 +18,7 @@ Or `brew tap homebrew/devel-only` and then `brew install --devel <formula>`
 Or install via URL (which will not receive updates):
 
 ```
-brew install --devel https://raw.githubusercontent.com/Homebrew/homebrew-devel-only/master/<formula>.rb
+brew install --devel https://raw.githubusercontent.com/Homebrew/homebrew-devel-only/master/Formula/<formula>.rb
 ```
 
 ## Documentation
