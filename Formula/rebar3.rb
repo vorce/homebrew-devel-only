@@ -3,9 +3,9 @@ class Rebar3 < Formula
   homepage "http://www.rebar3.org"
 
   devel do
-    url "https://github.com/rebar/rebar3/archive/beta-1.tar.gz"
-    version "3.0.0-beta-1"
-    sha256 "94525dab9e3a50a126be60c86671f35a73dec960eac52b79b03003f692f69864"
+    url "https://github.com/rebar/rebar3/archive/beta-2.tar.gz"
+    version "3.0.0-beta-2"
+    sha256 "0aa014290f5d971206fc79f48d0e3047266e09a6124f044b7e6f7a396b10d831"
 
     depends_on "erlang"
   end
