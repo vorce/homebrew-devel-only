@@ -1,4 +1,5 @@
 class Bish < Formula
+  desc "Scripting language that compiles to Bash"
   homepage "https://github.com/tdenniston/bish"
 
   devel do
