@@ -1,9 +1,10 @@
 class J2objc < Formula
+  desc "Command-line tool to translate Java to Objective-C"
   homepage "http://j2objc.org/"
 
   devel do
-    url "https://github.com/google/j2objc/releases/download/0.9.7/j2objc-0.9.7.zip"
-    sha256 "47496a5d9039d7438f4e80facedd270ab748620603c1d5138ccd1c011a26501e"
+    url "https://github.com/google/j2objc/releases/download/0.9.8.1/j2objc-0.9.8.1.zip"
+    sha256 "3edff65fbfaa0a99fdb36dad97059070ba09b77ace7753573771204395dd862b"
   end
 
   depends_on :xcode
