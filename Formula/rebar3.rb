@@ -3,9 +3,11 @@ class Rebar3 < Formula
   homepage "http://www.rebar3.org"
 
   devel do
-    url "https://github.com/rebar/rebar3/archive/beta-2.tar.gz"
-    version "3.0.0-beta-2"
-    sha256 "0aa014290f5d971206fc79f48d0e3047266e09a6124f044b7e6f7a396b10d831"
+    # We cannot use tar/zip file.
+    # It needs git repository for versioning at bootstrap.
+    url "https://github.com/rebar/rebar3.git",
+        :tag => "3.0.0-beta.3",
+        :revision => "4177c75a7c709b615962b1a885c119a51ed0aab0"
 
     depends_on "erlang"
   end
