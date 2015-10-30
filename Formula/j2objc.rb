@@ -3,8 +3,8 @@ class J2objc < Formula
   homepage "http://j2objc.org/"
 
   devel do
-    url "https://github.com/google/j2objc/releases/download/0.9.8.1/j2objc-0.9.8.1.zip"
-    sha256 "3edff65fbfaa0a99fdb36dad97059070ba09b77ace7753573771204395dd862b"
+    url "https://github.com/google/j2objc/releases/download/0.9.8.2.1/j2objc-0.9.8.2.1.zip"
+    sha256 "6b9dbdfcd04205e8fbc39321b193b088aa3321b0d73a87306ed72d0762460630"
   end
 
   depends_on :xcode
