@@ -19,6 +19,11 @@ class ElmFormat < Formula
   def install
     (buildpath/"elm-format").install Dir["*"]
 
+    # GHC 8 compat
+    # Fixes: "cabal: Could not resolve dependencies"
+    # Reported 26 May 2016: https://github.com/avh4/elm-format/issues/188
+    (buildpath/"cabal.config").write("allow-newer: aeson,base,transformers\n")
+
     cabal_sandbox do
       cabal_sandbox_add_source "elm-format"
       cabal_install "--only-dependencies", "elm-format"
